@@ -127,7 +127,7 @@ function loadStatus() {
         data.forEach(row => {
             $('#statusTable').append(`
                 <tr>
-                    <td>${row.created_at}</td>
+                    <td>${row.created_at_formatted}<br>(${row.created_at_human})</td>
                     <td>${row.file_name}</td>
                     <td>${row.status}</td>
                 </tr>
